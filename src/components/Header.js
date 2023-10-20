@@ -11,6 +11,7 @@ import { MdOutlineAllInclusive } from "react-icons/md";
 import { TiThMenu } from "react-icons/ti";
 import { CgClose } from "react-icons/cg"
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { MdVerified } from "react-icons/md";
 
 
 export default function Header() {
@@ -72,7 +73,7 @@ export default function Header() {
                             Andi Karna
                           </p>
                           <div className="mx-1 flex items-center">
-                            <img src="/images/icons/verified.svg" width={15} />
+                            <MdVerified className="text-blue-500"/>
                           </div>
                         </div>
                         <div className="flex justify-start">
@@ -121,13 +122,13 @@ export default function Header() {
               <li className="flex items-center space-x-4">
                 <Link href="/" className={`flex items-center w-fit h-10 px-2 py-1 rounded-lg text-dark dark:text-gray-300 hover:bg-gray-100 dark:hover:text-teal-300 dark:hover:bg-gray-800 ${route == '/' ? ('bg-gray-200 dark:bg-gray-800 dark:text-teal-300') : ('')}`}>
                   <BiHomeSmile className="text-xl mr-2" />
-                  {locale == 'id-ID' ? ('Beranda') : (' Home')}</Link>
+                  Home</Link>
                 <Link href="/menu/about" className={`flex items-center w-fit h-10 px-2 py-1 rounded-lg text-dark dark:text-gray-300 hover:bg-gray-100 dark:hover:text-teal-300 dark:hover:bg-gray-800 ${route == '/menu/about' ? ('bg-gray-200 dark:bg-gray-800 dark:text-teal-300') : ('')}`}>
                   <MdOutlineAllInclusive className="text-xl mr-2"/>
-                  {locale == 'id-ID' ? ('Tentang Saya') : ('About')}</Link>
+                  About</Link>
                 <Link href="/menu/product" className={`flex items-center w-fit h-10 px-2 py-1 rounded-lg text-dark dark:text-gray-300 hover:bg-gray-100 dark:hover:text-teal-300 dark:hover:bg-gray-800 ${route == '/menu/product' ? ('bg-gray-200 dark:bg-gray-800 dark:text-teal-300') : ('')}`}>
                   <TbShoppingBagSearch className="text-xl mr-2"/>
-                  {locale == 'id-ID' ? ('Produk') : ('Product')}</Link>
+                  Product</Link>
               </li>
             </div>
 

@@ -31,6 +31,7 @@ export default function Product() {
     router.push('/about')
   }
 
+  // skleton
   if (!loading) {
     return (
       <div className="flex flex-col space-y-5 py-20 justify-center text-dark mx-20 sm:mx-10 md:mx-5 lg:mx-24">
@@ -120,7 +121,7 @@ export default function Product() {
         <div className="py-10">
           <div className="flex items-center justify-center">
             <BiSolidShoppingBag className="text-3xl text-dark dark:text-gray-300" />
-            <h3 className="flex text-3xl font-medium justify-center xl:text-3xl text-dark dark:text-gray-300">{locale === "id-ID" ? "Produk Saya" : "Product Saya"}</h3>
+            <h3 className="flex text-3xl font-medium justify-center xl:text-3xl text-dark dark:text-gray-300">Products</h3>
 
           </div>
 

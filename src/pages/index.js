@@ -20,10 +20,6 @@ export default function Home() {
   const onDirect = () => {
     router.push('/menu/about')
   }
-
-  console.log(router)
-
-
   return (
     <>
       <TheHead title="Home | Andikarna" />
@@ -51,7 +47,7 @@ export default function Home() {
           </ul>
 
           <div className="flex justify-center sm:justify-start">
-            <button onClick={onDirect} className="btn box-shadow py-2 px-5 rounded-2xl border-2 dark:hover:text-teal-500 dark:text-gray-900 dark:hover:bg-gray-900">{locale === "id-ID" ? "Tentang Saya" : "About me"}</button>
+            <button onClick={onDirect} className="btn box-shadow py-2 px-5 rounded-2xl border-2 dark:hover:text-teal-500 dark:text-gray-900 dark:hover:bg-gray-900">About me</button>
           </div>
 
         </div>
@@ -59,7 +55,7 @@ export default function Home() {
         <div className="b-line my-3"></div>
 
         {/* Career */}
-        <div className="py-5 border-b-2 dark:border-b-gray-500">
+        <div className="py-5 dark:border-b-gray-500">
           <div className="flex justify-center sm:justify-start items-center text-xl sm:text-2xl text-dark dark:text-gray-300">
             <HiOfficeBuilding />
             <label>Career</label>

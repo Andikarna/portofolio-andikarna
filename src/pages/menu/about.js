@@ -6,6 +6,9 @@ import TheHead from "@/components/TheHead.js";
 // icons
 import { AiOutlineLink } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 export default function About() {
 
@@ -42,26 +45,26 @@ export default function About() {
                   <ul class="my-4 space-y-3">
                     <li>
                       <Link href="https://www.tiktok.com/@ndilyo?is_from_webapp=1&sender_device=pc" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-                        <img src="/images/icons/tiktok.svg" alt="tiktok" width={23} />
+                        <FaTiktok />
                         <span class="flex-1 ml-3 whitespace-nowrap">Tiktok</span>
                         <span class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.instagram.com/ndi.kan/" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-                        <img src="/images/icons/instagram.svg" alt="instagram/andikarna" width={25} />
+                        <RiInstagramFill className=" text-red-500" />
                         <span class="flex-1 ml-3 whitespace-nowrap">Instagram</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.linkedin.com/in/andikarna/" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-                        <img src="/images/icons/linkedin.svg" alt="linkedin/andikarna" width={25} />
+                        <AiFillLinkedin className="text-blue-600"/>
                         <span class="flex-1 ml-3 whitespace-nowrap">Linkedin</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://github.com/Andikarna" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
-                        <img src="/images/icons/github.svg" width={25} />
+                        <AiFillGithub />
                         <span class="flex-1 ml-3 whitespace-nowrap">Github</span>
                       </Link>
                     </li>
@@ -81,7 +84,7 @@ export default function About() {
               ""
             )}
 
-            <div className="space-y-5 text-dark dark:text-gray-400">
+            <div className="text-center sm:text-start space-y-5 text-dark dark:text-gray-400">
               <p>Hi! I am Andi Karna, I am an experienced informatics graduate with a deep dedication to creating good and efficient solutions through code. With a strong foundation in Programming, as well as a basic understanding of frontend tools and frameworks, I have embraced the ever-evolving web development with enthusiasm and dedication. Currently, domiciled in Tangerang, Indonesia 🇮🇩.
               </p>
               <p>
