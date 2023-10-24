@@ -94,14 +94,18 @@
   grid-template-columns:repeat(auto-fit, minmax(300px , 1fr));
   gap: 15px;
   padding: 20px 10px;
+  
+}
+
+.container-box-skill{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px , 1fr));
+  gap: 15px;
+  padding: 20px 10px;
 }
 
 .container-certificate{
   padding: 20px 10px;
-}
-
-.slider{
-  padding: 50%;
 }
 
 

@@ -20,10 +20,10 @@ export default function Project() {
   return (
     <>
       <TheHead title="Projects | Andikarna" />
-      <div className="flex justify-center py-20">
+      <div className="flex justify-center py-20 px-10">
         <div className="w-screen">
           <section>
-            <div className=" space-y-1">
+            <div className="space-y-1">
               <div className="flex text-dark dark:text-gray-300 items-center justify-center sm:justify-start space-x-1">
                 <SiOpenproject className="text-3xl" />
                 <h1 className="text-3xl">Projects</h1>
@@ -126,7 +126,7 @@ export default function Project() {
                       <div className="flex items-center space-x-2">
                         <SiLaravel className="text-3xl text-orange-500" />
                         <FaBootstrap className="text-3xl text-blue-500" />
-                        <GrMysql className="text-3xl text-blue-950"/>
+                        <GrMysql className="text-3xl text-blue-950 dark:text-white"/>
                       </div>
                     </div>
                   </div>
@@ -141,7 +141,7 @@ export default function Project() {
                     <p class="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Building a web using Wordpress I can create an ecommerce website very quickly</p>
                     <div className="md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
-                        <BsWordpress className="text-3xl text-black" />
+                        <BsWordpress className="text-3xl text-black dark:text-white" />
 
                       </div>
                       <Link href="https://andikarna.wordpress.com/" className="flex items-center text-sm text-gray-500 hover:text-teal-500 dark:text-gray-300">

@@ -16,6 +16,10 @@ import 'swiper/css/effect-coverflow';
 // icons
 import { FiArrowLeftCircle } from "react-icons/fi";
 import { FiArrowRightCircle } from "react-icons/fi";
+import { GiClick } from "react-icons/gi";
+
+// nextui
+import { Code } from "@nextui-org/react";
 
 
 export default function Home() {
@@ -32,11 +36,9 @@ export default function Home() {
     <>
       <TheHead title="Certificate | Andikarna" />
 
-      <div className="home py-20 w-full dark:bg-gray-900">
+      <div className="py-10 sm:px-10 w-full dark:bg-gray-900 h-screen">
 
-        {/* <img src="/images/banner.png" className="rounded-xl" /> */}
-        {/* Career */}
-        <div className="py-5 border-b-2 dark:border-b-gray-500">
+        <div className="pt-10 dark:border-b-gray-500">
           <div className="flex justify-center sm:justify-start items-center text-2xl sm:text-3xl text-dark dark:text-gray-300">
             <PiCertificateBold className="mr-2" />
             <label>Certificate</label>
@@ -45,8 +47,6 @@ export default function Home() {
 
 
           <div className="b-line my-5"></div>
-
-
 
           <div className="dark:bg-gradient-to-r dark:from-gray-900 dark:to-blue-500">
             <div className="container-certificate">
@@ -71,33 +71,33 @@ export default function Home() {
                 className="slider"
               >
                 <SwiperSlide>
-                  <Link href="#">
+                  <Link href="/images/certificate/1.png">
                     <img src="/images/certificate/1.png" />
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link href="#">
+                  <Link href="/images/certificate/3.png">
                     <img src="/images/certificate/3.png" />
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link href="#">
+                  <Link href="/images/certificate/2.png">
                     <img src="/images/certificate/2.png" />
 
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link href="#">
+                  <Link href="/images/certificate/4.png">
                     <img src="/images/certificate/4.png" />
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link href="#">
+                  <Link href="/images/certificate/5.png">
                     <img src="/images/certificate/5.png" />
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link href="#">
+                  <Link href="/images/certificate/6.jpg">
                     <img src="/images/certificate/6.jpg" />
                   </Link>
                 </SwiperSlide>
@@ -116,6 +116,9 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="flex justify-center my-5">
+            <Code color="default">click on the image to zoom.</Code>
+          </div>
         </div >
       </div >
     </>
