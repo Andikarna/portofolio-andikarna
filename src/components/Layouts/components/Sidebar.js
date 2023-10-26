@@ -1,4 +1,4 @@
-import ContentSideBar from "./contentSidebar/contentSidebar";
+import ContentSideBar from "./contentSidebar";
 
 
 export default function Sidebar() {

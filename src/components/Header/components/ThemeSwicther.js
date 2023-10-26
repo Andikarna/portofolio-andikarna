@@ -30,7 +30,7 @@ const ThemeSwitch = () => {
   }
 
   return (
-    <button type="submit" onClick={swicthTheme} className="text-dark dark:text-teal-500 dark:hover:text-teal-300">
+    <button type="submit" onClick={swicthTheme} alt="swtch-button" className="text-dark dark:text-teal-500 dark:hover:text-teal-300">
       {theme === 'light' ? (
         <IoPartlySunnyOutline />
       ) : (

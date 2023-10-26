@@ -1,4 +1,4 @@
-import TheHead from "@/components/TheHead";
+import TheHead from "@/components/Layouts/components/TheHead";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { PiCertificateBold } from "react-icons/pi";
@@ -20,18 +20,10 @@ import { GiClick } from "react-icons/gi";
 
 // nextui
 import { Code } from "@nextui-org/react";
+import Image from "next/image";
 
 
 export default function Home() {
-
-  const router = useRouter();
-  const { locale } = router
-
-  const onDirect = () => {
-    router.push('/menu/about')
-  }
-
-
   return (
     <>
       <TheHead title="Certificate | Andikarna" />
@@ -44,7 +36,6 @@ export default function Home() {
             <label>Certificate</label>
           </div>
           <p className="text-center py-2 sm:text-start text-gray-500 text-sm sm:text-md">Some of the certificates I received from companies or organizations were in the form of problem solving and basic learning.</p>
-
 
           <div className="b-line my-5"></div>
 
@@ -72,33 +63,33 @@ export default function Home() {
               >
                 <SwiperSlide>
                   <Link href="/images/certificate/1.png">
-                    <img src="/images/certificate/1.png" />
+                    <Image src="/images/certificate/1.png" alt="picture1" width={500} height={500} />
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link href="/images/certificate/3.png">
-                    <img src="/images/certificate/3.png" />
+                    <Image src="/images/certificate/3.png" alt="picture3" width={500} height={500} />
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link href="/images/certificate/2.png">
-                    <img src="/images/certificate/2.png" />
+                    <Image src="/images/certificate/2.png" alt="picture2" width={500} height={500} />
 
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link href="/images/certificate/4.png">
-                    <img src="/images/certificate/4.png" />
+                    <Image src="/images/certificate/4.png" alt="picture4" width={500} height={500} />
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link href="/images/certificate/5.png">
-                    <img src="/images/certificate/5.png" />
+                    <Image src="/images/certificate/5.png"alt="picture1" width={500} height={500} />
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link href="/images/certificate/6.jpg">
-                    <img src="/images/certificate/6.jpg" />
+                    <Image src="/images/certificate/6.jpg" alt="picture1" width={500} height={500} />
                   </Link>
                 </SwiperSlide>
               </Swiper>

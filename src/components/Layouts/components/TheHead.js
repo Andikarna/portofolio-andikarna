@@ -5,7 +5,7 @@ export default function TheHead({title}) {
     <>
       <Head >
         <title>{title}</title>
-        <link rel="icon" href="/images/andi.png"></link>
+        <link rel="icon" href="/images/andi.webp"></link>
       </Head>
     </>
   )

@@ -1,4 +1,4 @@
-import TheHead from "@/components/TheHead.js";
+import TheHead from "@/components/Layouts/components/TheHead.js";
 import Link from "next/link";
 
 // icons
@@ -36,13 +36,13 @@ export default function Project() {
             <div className="container dark:bg-gradient-to-r px-1 dark:from-gray-900 dark:to-blue-500">
               <div className="container-box-project">
 
-                <div class="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img class="rounded-t-lg" src="/images/project/modernWeb.png" alt="" />
+                    <img className="rounded-t-lg" src="/images/project/modernWeb.png" alt="" />
                   </div>
-                  <div class="p-5">
-                    <h5 class="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Modern Web</h5>
-                    <p class="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Websites created with parallax animation are built using HTML, CSS and JavaScript only.</p>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Modern Web</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Websites created with parallax animation are built using HTML, CSS and JavaScript only.</p>
                     <div className="md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <AiFillHtml5 className="text-3xl text-orange-500" />
@@ -57,13 +57,13 @@ export default function Project() {
                   </div>
                 </div>
 
-                <div class="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img class="rounded-t-lg" src="/images/project/auth-ui.png" alt="" />
+                    <img className="rounded-t-lg" src="/images/project/auth-ui.png" alt="" />
                   </div>
-                  <div class="p-5">
-                    <h5 class="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Authentication</h5>
-                    <p class="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Website with authentication feature built with Node JS and ReactJS.</p>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Authentication</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Website with authentication feature built with Node JS and ReactJS.</p>
                     <div className="md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <RiReactjsLine className="text-3xl text-teal-500" />
@@ -76,13 +76,13 @@ export default function Project() {
                   </div>
                 </div>
 
-                <div class="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img class="rounded-t-lg" src="/images/project/portofolio.png" alt="" />
+                    <img className="rounded-t-lg" src="/images/project/portofolio.png" alt="" />
                   </div>
-                  <div class="p-5">
-                    <h5 class="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Personal Website</h5>
-                    <p class="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Personal website styling with TailwindCSS3.</p>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Personal Website</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Personal website styling with TailwindCSS3.</p>
                     <div className="md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <AiFillHtml5 className="text-3xl text-orange-500" />
@@ -97,13 +97,13 @@ export default function Project() {
                   </div>
                 </div>
 
-                <div class="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img class="rounded-t-lg" src="/images/project/game.png" alt="" />
+                    <img className="rounded-t-lg" src="/images/project/game.png" alt="" />
                   </div>
-                  <div class="p-5">
-                    <h5 class="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Game Tournament Template</h5>
-                    <p class="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Free Source Code Web Game Schedule built with ReactJS.</p>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Game Tournament Template</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Free Source Code Web Game Schedule built with ReactJS.</p>
                     <div className="md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <RiReactjsLine className="text-3xl text-teal-500" />
@@ -115,13 +115,13 @@ export default function Project() {
                   </div>
                 </div>
 
-                <div class="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img class="rounded-t-lg" src="/images/project/blog.png" alt="" />
+                    <img className="rounded-t-lg" src="/images/project/blog.png" alt="" />
                   </div>
-                  <div class="p-5">
-                    <h5 class="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Blog</h5>
-                    <p class="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Blog website with login, post, update post and delete post features.</p>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Blog</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Blog website with login, post, update post and delete post features.</p>
                     <div className="md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <SiLaravel className="text-3xl text-orange-500" />
@@ -132,13 +132,13 @@ export default function Project() {
                   </div>
                 </div>
 
-                <div class="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img class="rounded-t-lg" src="/images/project/wp.png" alt="" />
+                    <img className="rounded-t-lg" src="/images/project/wp.png" alt="" />
                   </div>
-                  <div class="p-5">
-                    <h5 class="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Wordpress Ecommerce</h5>
-                    <p class="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Building a web using Wordpress I can create an ecommerce website very quickly</p>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Wordpress Ecommerce</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Building a web using Wordpress I can create an ecommerce website very quickly</p>
                     <div className="md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <BsWordpress className="text-3xl text-black dark:text-white" />

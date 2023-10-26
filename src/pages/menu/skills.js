@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 'use client';
 
-import TheHead from "@/components/TheHead";
+import TheHead from "@/components/Layouts/components/TheHead";
 import { gsap } from "gsap";
 import Link from "next/link";
 import { useEffect, useRef } from 'react';

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import TikTokEmbed from '../tiktokEmbed.js';
-import TheHead from "@/components/TheHead.js";
+import TheHead from "@/components/Layouts/components/TheHead.js";
 
 // icons
 import { AiOutlineLink } from "react-icons/ai";
