@@ -17,20 +17,9 @@ export default function Header() {
   const router = useRouter();
   const { route } = router
 
-  const [click, setClick] = useState(true);
-  const [clickProfile, setClickProfile] = useState(true);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [backdrop, setBackdrop] = useState('blur')
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
-  const toggleNavbar = () => {
-    setClick(!click);
-  }
-
-  const toggleProfile = () => {
-    setClickProfile(!clickProfile);
-  }
 
   const handleOpen = () => {
     setBackdrop(backdrop);
@@ -51,8 +40,7 @@ export default function Header() {
       {/* Logo User */}
       <NavbarContent justify="center">
         <NavbarBrand className="flex justify-start">
-          <NavbarItem className="flex items-center space-x-3 animate__bounce">
-
+          <NavbarItem className="hidden lg:flex items-center space-x-3 animate__bounce">
             <Button
               color="transparent"
               onPress={() => handleOpen()}
@@ -79,7 +67,6 @@ export default function Header() {
                 )}
               </ModalContent>
             </Modal>
-
           </NavbarItem>
         </NavbarBrand>
       </NavbarContent>
@@ -87,9 +74,10 @@ export default function Header() {
       {/* Navigasi Bar  */}
       <NavbarContent justify="center" className="hidden lg:flex justify-center w-full">
         <NavbarItem className="flex items-center h-full space-x-4">
+
           <Link
-            href="/"
-            className={`flex items-center w-fit h-10 px-2 py-1 rounded-lg text-dark dark:text-gray-300 hover:bg-gray-100 dark:hover:text-teal-300 dark:hover:bg-gray-800 ${route == '/' ? ('bg-gray-200 dark:bg-gray-800 dark:text-teal-300') : ('')}`}
+            href="/menu/home"
+            className={`flex items-center w-fit h-10 px-2 py-1 rounded-lg text-dark dark:text-gray-300 hover:bg-gray-100 dark:hover:text-teal-300 dark:hover:bg-gray-800 ${route == '/menu/home' ? ('bg-gray-200 dark:bg-gray-800 dark:text-teal-300') : ('')}`}
           >
             <BiHomeSmile className="text-xl mr-2" />
             Home

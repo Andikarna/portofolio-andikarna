@@ -21,6 +21,7 @@ export default function About() {
   return (
     <>
       <TheHead title="About | Andikarna" />
+      
       <div className="py-10 px-10 w-full flex justify-center">
         <div className="w-screen">
           <section>
@@ -37,42 +38,42 @@ export default function About() {
 
             {isClick ? (
               <div className="flex justify-center sm:justify-end">
-                <div class="absolute w-80 -mt-8 bg-white border border-gray-200 rounded-lg shadow p-6 sm:p-6 dark:bg-gray-800 dark:border-gray-700">
-                  <h5 class="mb-3 text-base font-semibold text-center sm:text-start text-gray-900 md:text-xl dark:text-white ">
+                <div className="absolute w-80 -mt-8 bg-white border border-gray-200 rounded-lg shadow p-6 sm:p-6 dark:bg-gray-800 dark:border-gray-700">
+                  <h5 className="mb-3 text-base font-semibold text-center sm:text-start text-gray-900 md:text-xl dark:text-white ">
                     Social Media
                   </h5>
-                  <p class="text-sm font-normal text-center sm:text-start text-gray-500 dark:text-gray-400">Connect with one of our available media and lets communicate.</p>
-                  <ul class="my-4 space-y-3">
+                  <p className="text-sm font-normal text-center sm:text-start text-gray-500 dark:text-gray-400">Connect with one of our available media and lets communicate.</p>
+                  <ul className="my-4 space-y-3">
                     <li>
                       <Link href="https://www.tiktok.com/@ndilyo?is_from_webapp=1&sender_device=pc" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                         <FaTiktok />
-                        <span class="flex-1 ml-3 whitespace-nowrap">Tiktok</span>
-                        <span class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
+                        <span className="flex-1 ml-3 whitespace-nowrap">Tiktok</span>
+                        <span className="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.instagram.com/ndi.kan/" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                         <RiInstagramFill className=" text-red-500" />
-                        <span class="flex-1 ml-3 whitespace-nowrap">Instagram</span>
+                        <span className="flex-1 ml-3 whitespace-nowrap">Instagram</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.linkedin.com/in/andikarna/" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                         <AiFillLinkedin className="text-blue-600"/>
-                        <span class="flex-1 ml-3 whitespace-nowrap">Linkedin</span>
+                        <span className="flex-1 ml-3 whitespace-nowrap">Linkedin</span>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://github.com/Andikarna" class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                         <AiFillGithub />
-                        <span class="flex-1 ml-3 whitespace-nowrap">Github</span>
+                        <span className="flex-1 ml-3 whitespace-nowrap">Github</span>
                       </Link>
                     </li>
 
                   </ul>
                   <div>
-                    <Link href="#" class="inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400">
-                      <svg class="w-3 h-3 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <Link href="#" className="inline-flex items-center text-xs font-normal text-gray-500 hover:underline dark:text-gray-400">
+                      <svg className="w-3 h-3 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                       </svg>
                       Why do I need to connect with my media?</Link>
