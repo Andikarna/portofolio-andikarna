@@ -111,6 +111,8 @@
 
 .box{
   transition: 0.5s;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .b-line{

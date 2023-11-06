@@ -1,14 +1,20 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function productDetail({ data }) {
 
   return (
-    <section>
+    <section className="py-16">
       <label className="title flex justify-center py-10 text-3xl font-sans font-medium text-dark">Produck Detail</label>
       <div className="flex justify-center">
         <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex-col justify-center">
           <Link href="#">
-            <img class="p-8 rounded-t-lg" src={data.image} alt={data.title} />
+            <Image
+              className="w-full h-auto p-8 rounded-t-lg"
+              src={data.image}
+              alt={data.title}
+              width={200}
+              height={300} />
           </Link>
           <div class="px-5 pb-5">
             <Link href="#">
@@ -28,7 +34,7 @@ export default function productDetail({ data }) {
         </div>
       </div>
       <div className="flex justify-center my-10">
-        <Link href="/" className="w-fit justify-center bg-red-500 py-2 px-5 rounded-xl text-white hover:bg-gray-900">Kembali</Link>
+        <Link href="/menu/product" className="w-fit justify-center bg-red-500 py-2 px-5 rounded-xl text-white hover:bg-gray-900">Kembali</Link>
       </div>
 
     </section>

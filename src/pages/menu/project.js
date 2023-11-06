@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // icons
 import { SiOpenproject } from "react-icons/si";
-import { TbViewportWide } from "react-icons/tb";
+import { TbViewportWide,TbBrandNextjs } from "react-icons/tb";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -12,8 +12,9 @@ import { RiReactjsLine } from "react-icons/ri";
 import { SiTailwindcss } from "react-icons/si";
 import { BsWordpress } from "react-icons/bs";
 import { SiLaravel } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa"; 
+import { FaBootstrap } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
+import Image from "next/image";
 
 
 export default function Project() {
@@ -38,12 +39,53 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img className="rounded-t-lg" src="/images/project/modernWeb.png" alt="" />
+                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/portofolio-next.png" alt="1" />
+                  </div>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Portofolio</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">My portfolio website, where all the information about me is here, including projects, experience and skills.</p>
+                    <div className="items-center md:flex space-y-5 md:space-y-0 justify-between ">
+                      <div className="flex items-center space-x-2">
+                        <TbBrandNextjs className="text-3xl text-black" />
+                        <RiReactjsLine className="text-3xl text-teal-500" />
+                        <SiTailwindcss className="text-3xl text-blue-500" />
+                      </div>
+                      <Link href="https://portofolio-andikarna.vercel.app" className="flex items-center text-sm text-gray-500 hover:text-teal-500 dark:text-gray-300" >
+                        <TbViewportWide className="mr-1 text-lg" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                  <div>
+                    <Image width={300} height={100} className="w-full h-auto rounded-t-lg" src="/images/project/nownime.png" alt="1" />
+                  </div>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Nownime</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Web with the help of restfull api displays Top Anime and anime details.</p>
+                    <div className="items-center md:flex space-y-5 md:space-y-0 justify-between ">
+                      <div className="flex items-center space-x-2">
+                        <TbBrandNextjs className="text-3xl text-black" />
+                        <RiReactjsLine className="text-3xl text-teal-500" />
+                        <SiTailwindcss className="text-3xl text-blue-500" />
+                      </div>
+                      <Link href="https://nownime-webanime.vercel.app/" className="flex items-center text-sm text-gray-500 hover:text-teal-500 dark:text-gray-300" >
+                        <TbViewportWide className="mr-1 text-lg" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                  <div>
+                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/modernWeb.png" alt="1" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Modern Web</h5>
                     <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Websites created with parallax animation are built using HTML, CSS and JavaScript only.</p>
-                    <div className="md:flex space-y-5 md:space-y-0 justify-between ">
+                    <div className="items-center  md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <AiFillHtml5 className="text-3xl text-orange-500" />
                         <DiCss3 className="text-3xl text-blue-500" />
@@ -51,7 +93,6 @@ export default function Project() {
                       </div>
                       <Link href="https://modern-web.karnaandi00.repl.co" className="flex items-center text-sm text-gray-500 hover:text-teal-500 dark:text-gray-300">
                         <TbViewportWide className="mr-1 text-lg" />
-                        Live Preview
                       </Link>
                     </div>
                   </div>
@@ -59,31 +100,31 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img className="rounded-t-lg" src="/images/project/auth-ui.png" alt="" />
+                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/auth-ui.png" alt="1" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Authentication</h5>
                     <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Website with authentication feature built with Node JS and ReactJS.</p>
-                    <div className="md:flex space-y-5 md:space-y-0 justify-between ">
+                    <div className="items-center  md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <RiReactjsLine className="text-3xl text-teal-500" />
                         <DiNodejs className="text-3xl text-green-500" />
                         <AiFillHtml5 className="text-3xl text-orange-500" />
                         <DiCss3 className="text-3xl text-blue-500" />
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img className="rounded-t-lg" src="/images/project/portofolio.png" alt="" />
+                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/portofolio.png" alt="2" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Personal Website</h5>
                     <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Personal website styling with TailwindCSS3.</p>
-                    <div className="md:flex space-y-5 md:space-y-0 justify-between ">
+                    <div className="items-center  md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <AiFillHtml5 className="text-3xl text-orange-500" />
                         <SiTailwindcss className="text-3xl text-blue-500" />
@@ -91,7 +132,6 @@ export default function Project() {
                       </div>
                       <Link href="https://portofoliotailwindcss3.karnaandi00.repl.co/" className="flex items-center text-sm text-gray-500 hover:text-teal-500 dark:text-gray-300">
                         <TbViewportWide className="mr-1 text-lg" />
-                        Live Preview
                       </Link>
                     </div>
                   </div>
@@ -99,34 +139,34 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img className="rounded-t-lg" src="/images/project/game.png" alt="" />
+                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/game.png" alt="3" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Game Tournament Template</h5>
                     <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Free Source Code Web Game Schedule built with ReactJS.</p>
-                    <div className="md:flex space-y-5 md:space-y-0 justify-between ">
+                    <div className="items-center md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <RiReactjsLine className="text-3xl text-teal-500" />
                         <AiFillHtml5 className="text-3xl text-orange-500" />
                         <DiCss3 className="text-3xl text-blue-500" />
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img className="rounded-t-lg" src="/images/project/blog.png" alt="" />
+                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/blog.png" alt="4" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Blog</h5>
                     <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Blog website with login, post, update post and delete post features.</p>
-                    <div className="md:flex space-y-5 md:space-y-0 justify-between ">
+                    <div className="items-center md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <SiLaravel className="text-3xl text-orange-500" />
                         <FaBootstrap className="text-3xl text-blue-500" />
-                        <GrMysql className="text-3xl text-blue-950 dark:text-white"/>
+                        <GrMysql className="text-3xl text-blue-950 dark:text-white" />
                       </div>
                     </div>
                   </div>
@@ -134,19 +174,18 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <img className="rounded-t-lg" src="/images/project/wp.png" alt="" />
+                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/wp.png" alt="5" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Wordpress Ecommerce</h5>
                     <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Building a web using Wordpress I can create an ecommerce website very quickly</p>
-                    <div className="md:flex space-y-5 md:space-y-0 justify-between ">
+                    <div className="items-center md:flex space-y-5 md:space-y-0 justify-between ">
                       <div className="flex items-center space-x-2">
                         <BsWordpress className="text-3xl text-black dark:text-white" />
 
                       </div>
                       <Link href="https://andikarna.wordpress.com/" className="flex items-center text-sm text-gray-500 hover:text-teal-500 dark:text-gray-300">
                         <TbViewportWide className="mr-1 text-lg" />
-                        Live Preview
                       </Link>
                     </div>
                   </div>

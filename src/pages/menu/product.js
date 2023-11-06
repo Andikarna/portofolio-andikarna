@@ -125,12 +125,12 @@ export default function Product() {
             {product.map((value) => (
               <div className="flex justify-center text-dark mx-20 lg:flex-col xl:mx-10" key={value.id}>
                 <div className="flex flex-col md:flex-col xl:flex-row items-center text-center sm:text-start border my-10 py-5 px-5 border-gray-300 rounded-xl shadow md:max-w-3xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 sm:space-x-10">
-                  <img className="object-cover w-40 h-auto rounded-t-lg  md:h-auto x md:rounded-none md:rounded-l-lg" src={value.image} alt={value.title}/>
+                  <img className="object-cover w-40 h-auto rounded-t-lg  md:h-auto x md:rounded-none md:rounded-l-lg" src={value.image} alt={value.title} />
                   <div className="flex flex-col justify-between leading-normal py-10 xl:py-0">
                     <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-dark dark:text-white">{value.title}</h5>
                     <p className="mb-3 font-normal text-xs sm:text-sm text-gray-700 dark:text-gray-400 pb-5 italic">{value.description}</p>
                     <div className="flex items-center justify-center sm:justify-start">
-                      <Link href={`/product/` + value.id} className="bg-teal text-sm sm:text-md text-white py-2 px-3 hover-bg-dark rounded-xl">Details</Link>
+                      <Link href={`/product/${value.id}`} className="bg-teal text-sm sm:text-md text-white py-2 px-3 hover-bg-dark rounded-xl">Details</Link>
                     </div>
                   </div>
                 </div>
