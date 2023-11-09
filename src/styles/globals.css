@@ -119,4 +119,11 @@
   border-bottom: 2px dashed #3f4c52;
 }
 
+.card-image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-height: 170px;
+  min-height: 170px;
+}
 

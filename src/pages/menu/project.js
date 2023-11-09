@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // icons
 import { SiOpenproject } from "react-icons/si";
-import { TbViewportWide,TbBrandNextjs } from "react-icons/tb";
+import { TbViewportWide, TbBrandNextjs } from "react-icons/tb";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -15,6 +15,7 @@ import { SiLaravel } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import Image from "next/image";
+import { Tooltip } from "@nextui-org/react";
 
 
 export default function Project() {
@@ -39,7 +40,7 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/portofolio-next.png" alt="1" />
+                    <Image width={300} height={100} className="card-image w-auto  rounded-t-lg" src="/images/project/portofolio-next.png" alt="1" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Portofolio</h5>
@@ -59,7 +60,29 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <Image width={300} height={100} className="w-full h-auto rounded-t-lg" src="/images/project/nownime.png" alt="1" />
+                    <Image width={300} height={100} className="card-image w-full rounded-t-lg" src="/images/project/iBlog.png" alt="1" />
+                  </div>
+                  <div className="p-5">
+                    <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">iBog</h5>
+                    <p className="mb-5 text-xs font-normal text-gray-500 dark:text-gray-400">Blog website that I created using restfull api and adding json files to create comment and userpages features.</p>
+                    <div className="items-center md:flex space-y-5 md:space-y-0 justify-between ">
+                      <div className="flex items-center space-x-2">
+                        <TbBrandNextjs className="text-3xl text-black" />
+                        <RiReactjsLine className="text-3xl text-teal-500" />
+                        <SiTailwindcss className="text-3xl text-blue-500" />
+                      </div>
+                      <Tooltip content="Detail Project" color="default" closeDelay={0}>
+                        <Link href="detailProject/Iblog" className="flex items-center text-sm text-gray-500 hover:text-teal-500 dark:text-gray-300" >
+                          <TbViewportWide className="mr-1 text-lg" />
+                        </Link>
+                      </Tooltip>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
+                  <div>
+                    <Image width={300} height={100} className="card-image w-full rounded-t-lg" src="/images/project/nownime.png" alt="1" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Nownime</h5>
@@ -80,7 +103,7 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/modernWeb.png" alt="1" />
+                    <Image width={300} height={100} className="w-auto card-image rounded-t-lg" src="/images/project/modernWeb.png" alt="1" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Modern Web</h5>
@@ -100,7 +123,7 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/auth-ui.png" alt="1" />
+                    <Image width={300} height={100} className="w-auto card-image rounded-t-lg" src="/images/project/auth-ui.png" alt="1" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Authentication</h5>
@@ -119,7 +142,7 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/portofolio.png" alt="2" />
+                    <Image width={300} height={100} className="w-auto card-image rounded-t-lg" src="/images/project/portofolio.png" alt="2" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Personal Website</h5>
@@ -139,7 +162,7 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/game.png" alt="3" />
+                    <Image width={300} height={100} className="w-auto card-image rounded-t-lg" src="/images/project/game.png" alt="3" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Game Tournament Template</h5>
@@ -157,7 +180,7 @@ export default function Project() {
 
                 <div className="box max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105">
                   <div>
-                    <Image width={300} height={100} className="w-auto h-auto rounded-t-lg" src="/images/project/blog.png" alt="4" />
+                    <Image width={300} height={100} className="w-auto card-image rounded-t-lg" src="/images/project/blog.png" alt="4" />
                   </div>
                   <div className="p-5">
                     <h5 className="mb-2 text-xl font-bold tracking-tight text-dark dark:text-white">Blog</h5>

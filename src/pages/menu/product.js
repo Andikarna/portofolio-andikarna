@@ -15,7 +15,7 @@ export default function Product() {
   const [loading, setLoading] = useState(false)
 
   const fetchProduct = async () => {
-    const response = await fetch('https://fakestoreapi.com/products')
+    const response = await fetch(`${process.env.NEXT_PUBLIC_PRODUCT}`)
     const data = await response.json();
     setProduct(data);
     setLoading(true);

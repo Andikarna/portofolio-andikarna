@@ -45,7 +45,7 @@ export default function productDetail({ data }) {
 export async function getServerSideProps(context) {
 
   const { query: { id } } = context;
-  const respones = await fetch(`https://fakestoreapi.com/products/${id}`);
+  const respones = await fetch(`${process.env.NEXT_PUBLIC_PRODUCT}/${id}`);
   const data = await respones.json();
 
   return {
